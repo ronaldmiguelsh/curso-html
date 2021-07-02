@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Atributos</title>
+    <style>
+        .parrafo-1{
+            color:red
+        }
+    </style>
+
+</head>
+
+<body>
+    
+    <p class="parrafo-1">Clases</p>
+    <!-- Sirve para identificar un elemento, desde JavaScript-->
+    <p id="parrafo">Indentificador a travéz de un ID</p>
+    <p title="Este es un Ejemplo del Atributo Title">Título con tooltip</p>
+    <p id ="parrafo-2" data-ejemplo = "Datos de Ejemplo">Datos pasados en la etiqueta</p>
+    
+    <script>
+        const p = document.getElementById('parrafo')
+        const parrafo2 = document.getElementById('parrafo-2')
+
+        console.log(p.textContent)
+        console.log(parrafo2.dataset.ejemplo)
+    </script>
+
+</body>
+</html>
